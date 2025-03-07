@@ -1,0 +1,129 @@
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+}
+
+.container {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 20px;
+    padding: 20px;
+}
+/* Vùng chứa logo và tên đề tài */
+.project-info {
+    display: flex;
+    align-items: center;
+    margin-bottom: 10px;
+    padding: 10px;
+    border-bottom: 1px solid #ddd; /* Đường kẻ dưới */
+    text-align: center;  
+    justify-content: center;
+}
+
+.project-logo {
+    width: 100px; /* Kích thước ảnh */
+    height: 100px;
+    /* border-radius: 100%; Ảnh tròn */
+    margin-right: 10px;
+}
+
+.project-title {
+    font-size: 1.5em;
+    font-weight: bold;
+    color: #333; /* Màu chữ */
+    
+}
+
+
+.device-list {
+    
+    min-width: 250px;
+    max-width: 380px;
+    background-color: #f9f9f9; /* Màu nền cho danh sách */
+    padding: 20px; /* Khoảng cách trong cùng */
+    border-radius: 10px; /* Bo tròn các góc của khung */
+    box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1); /* Thêm bóng nhẹ cho phần danh sách */
+    margin-bottom: 20px; /* Khoảng cách dưới phần danh sách */
+}
+
+.device-list h2 {
+    text-align: center;
+    background-color: #4caf50;
+    color: white;
+    padding: 10px 0;
+    border-radius: 10px; /* Bo tròn tất cả các góc */
+}
+
+#device-list {
+    list-style: none;
+    padding: 0;
+}
+
+.device-item {
+    margin-bottom: 10px; /* Khoảng cách giữa các mục */
+    padding: 10px;
+    border-radius: 5px; /* Bo tròn góc của từng item */
+    background-color: #fff; /* Màu nền trắng cho mỗi mục */
+    box-shadow: 0 1px 5px rgba(0, 0, 0, 0.1); /* Thêm bóng nhẹ cho mỗi mục */
+}
+
+/* Nút xem chi tiết */
+.device-item .show-details {
+    background-color: #4CAF50; /* Màu nền cho nút */
+    color: white;
+    padding: 5px 10px;
+    border-radius: 5px; /* Bo tròn góc nút */
+    cursor: pointer;
+    border: none;
+    transition: background-color 0.3s ease;
+}
+
+.device-item .show-details:hover {
+    background-color: #45a049; /* Màu nền khi hover */
+}
+.device-item .device-name {
+    font-weight: bold;
+}
+
+.device-details {
+    display: none;
+    margin-top: 10px;
+    font-size: 14px;
+}
+
+.device-item.active .device-details {
+    display: block;
+}
+
+.map-container {
+    flex: 2;
+    min-width: 400px;
+}
+
+#google-map {
+    width: 100%;
+    height: 500px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+}
+/* Container chứa tiêu đề và trạng thái */
+.header-container {
+    display: flex;
+    justify-content: space-between; /* Căn đều không gian giữa */
+    align-items: center; /* Căn giữa theo chiều dọc */
+    margin-bottom: 10px; /* Khoảng cách dưới tiêu đề */
+}
+
+/* Trạng thái bên phải */
+#current-status {
+    font-size: 18px;
+    color: #fff;
+    padding: 5px 10px;
+    background-color: green; /* Màu nền cho trạng thái bình thường */
+    border-radius: 5px;
+}
+
+#current-status.warning {
+    background-color: red; /* Màu nền khi có cảnh báo */
+}

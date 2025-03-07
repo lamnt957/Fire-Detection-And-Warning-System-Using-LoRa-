@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="vi">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Hệ thống giám sát cảm biến cháy rừng</title>
+    <link rel="stylesheet" href="styles.css">
+    <!-- Firebase JS -->
+    <script src="https://www.gstatic.com/firebasejs/8.10.0/firebase-app.js"></script>
+    <script src="https://www.gstatic.com/firebasejs/8.10.0/firebase-database.js"></script>
+    <!-- Google Maps API -->
+    <script 
+        src="https://maps.googleapis.com/maps/api/js?key=AIzaSyDbp0WW_I1bQabLZL9-R3aMcf9eI6r86dc&callback=initMap" 
+
+        async 
+        defer>
+    </script>
+</head>
+<body>
+    <!-- Thêm logo và tên đề tài -->
+    <div class="project-info">
+        <img src="Logo.png" alt="Logo Đề Tài" class="project-logo">
+        <h1 class="project-title">HỆ THỐNG GIÁM SÁT CHÁY RỪNG</h1>
+    </div>
+    <div class="container">        
+        <!-- Danh sách thiết bị -->
+        <div class="device-list">
+            <h2>Danh sách thiết bị</h2>
+            <ul id="device-list">
+                <!-- Các thiết bị sẽ được thêm vào từ JavaScript -->
+            </ul>
+        </div>
+        <!-- Khu vực bản đồ -->
+        <div class="map-container">
+            <div class="header-container">
+                <h2>Bản đồ giám sát</h2>
+                <div id="current-status" class="status-box">Tình trạng hiện tại: Bình thường</div>
+            </div>
+            <div id="google-map"></div>
+            
+        </div>
+    </div>
+
+    <!-- JavaScript -->
+    <script src="script.js"></script>
+</body>
+</html>
